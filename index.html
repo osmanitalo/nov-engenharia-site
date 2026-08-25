@@ -1,897 +1,250 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NOV Engenharia | Engenharia Elétrica</title>
-  <meta name="description" content="NOV Engenharia: soluções completas em engenharia elétrica. Projetos, instalações, manutenções, laudos e consultoria com alto padrão de qualidade e segurança." />
-  <style>
-    :root{
-      /* Paleta */
-      --petroleo:#0B3A4A;       /* azul petróleo */
-      --petroleo-2:#072C38;
-      --branco:#FFFFFF;
-      --rubi:#A3003A;           /* vermelho rubi */
-      --rubi-2:#7F002D;
-      --cinza:#E9EEF1;
-      --texto:#0E1A20;
-      --muted:#6B7C85;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOV Engenharia | Soluções completas em Engenharia</title>
+<meta name="description" content="NOV Engenharia: projetos, instalações, laudos e manutenção para residências, comércios e indústrias.">
+<meta name="theme-color" content="#073B4C">
+<style>
+:root{--p:#073B4C;--p2:#052C39;--r:#A30D3C;--r2:#7D082F;--w:#fff;--g:#F4F7F8;--b:#DFE8EB;--t:#12232B;--m:#60727B;--rad:20px;--sh:0 18px 55px rgba(5,44,57,.13);--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:85px}body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--t);line-height:1.6;overflow-x:hidden}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}.container{width:min(var(--max),calc(100% - 32px));margin:auto}.section{padding:88px 0}.alt{background:var(--g)}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--r);font-size:.78rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.eyebrow:before{content:"";width:28px;height:2px;background:var(--r)}.head{max-width:760px;margin-bottom:36px}.head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.08;letter-spacing:-.045em;color:var(--p2);margin:10px 0 14px}.head p{color:var(--m);font-size:1.03rem}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:0 20px;border-radius:12px;border:1px solid transparent;font-weight:800;transition:.2s;cursor:pointer}.btn:hover{transform:translateY(-2px)}.primary{background:var(--r);color:#fff;box-shadow:0 10px 25px rgba(163,13,60,.22)}.primary:hover{background:var(--r2)}.secondary{background:#fff;color:var(--p);border-color:#d5e1e5}.dark{background:var(--p);color:#fff}
+.header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(7,59,76,.08)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;color:var(--p);font-weight:900}.brand-logo{display:block;width:150px;height:auto;max-height:58px;object-fit:contain}.links{display:flex;gap:2px}.links a{padding:10px 11px;border-radius:10px;font-weight:700;font-size:.9rem;color:#29434d}.links a:hover{background:#eef4f6;color:var(--p)}.nav .btn{min-height:43px;padding:0 16px;font-size:.84rem}.menu{display:none;border:0;background:none;font-size:1.6rem;color:var(--p);cursor:pointer}
+.hero{color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 86% 15%,rgba(163,13,60,.45),transparent 28%),linear-gradient(125deg,var(--p2),var(--p))}.hero:before{content:"";position:absolute;inset:0;opacity:.1;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:42px 42px}.hero-grid{min-height:650px;padding:65px 0;display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;position:relative}.hero .eyebrow{color:#fff}.hero .eyebrow:before{background:var(--r)}h1{font-size:clamp(2.8rem,6vw,5.2rem);line-height:.98;letter-spacing:-.06em;margin:18px 0 22px}.hero h1 em{font-style:normal;color:#eab1c2}.hero-text{max-width:620px;color:rgba(255,255,255,.82);font-size:1.08rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero .secondary{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.25);color:#fff}.trust{display:flex;gap:20px;flex-wrap:wrap;margin-top:30px;color:rgba(255,255,255,.72);font-size:.86rem}.trust b{color:#fff}.visual{min-height:430px;position:relative}.photo{position:absolute;inset:20px 0 20px 25px;border-radius:28px;overflow:hidden;background:linear-gradient(145deg,rgba(7,59,76,.15),rgba(5,44,57,.9)),url("https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=85") center/cover;box-shadow:0 28px 70px rgba(0,0,0,.28)}.photo-caption{position:absolute;left:24px;right:24px;bottom:23px}.photo-caption small{color:rgba(255,255,255,.7);font-weight:800}.photo-caption h3{font-size:1.4rem}.badge{position:absolute;z-index:2;left:0;top:0;background:var(--r);padding:13px 16px;border-radius:14px;box-shadow:0 14px 30px rgba(163,13,60,.3)}.badge b{display:block;font-size:1.3rem;line-height:1}.badge span{font-size:.72rem}.float-card{position:absolute;right:-10px;bottom:0;width:205px;padding:18px;border-radius:18px;background:#fff;color:var(--t);box-shadow:var(--sh)}.float-card b{display:block;color:var(--p)}.float-card span{font-size:.8rem;color:var(--m)}
+.stats{background:#fff;border-bottom:1px solid #e7eef0}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}.stat{text-align:center;padding:24px 15px;border-right:1px solid #e7eef0}.stat:last-child{border:0}.stat b{display:block;color:var(--p);font-size:1.45rem}.stat span{color:var(--m);font-size:.82rem}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}.about-img{min-height:450px;position:relative}.about-img:before{content:"";position:absolute;inset:0 50px 0 0;border-radius:25px;background:linear-gradient(160deg,rgba(7,59,76,.15),rgba(7,59,76,.78)),url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85") center/cover}.about-card{position:absolute;right:0;bottom:25px;background:var(--p);color:#fff;padding:20px;border-radius:18px;width:205px;box-shadow:var(--sh)}.about-card b{font-size:2rem;display:block;line-height:1}.about-card span{font-size:.8rem;color:rgba(255,255,255,.7)}.about h2{font-size:clamp(2rem,4vw,3rem);line-height:1.08;letter-spacing:-.045em;color:var(--p2);margin:10px 0 18px}.about p{color:var(--m);margin-bottom:14px}.highlights{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:23px}.highlight{padding:15px;border:1px solid var(--b);border-radius:15px}.highlight b{display:block;color:var(--p)}.highlight span{font-size:.82rem;color:var(--m)}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{background:#fff;border:1px solid var(--b);border-radius:18px;padding:21px;box-shadow:0 8px 25px rgba(5,44,57,.07);transition:.2s}.service:hover{transform:translateY(-4px);box-shadow:var(--sh)}.icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#edf4f6;color:var(--p);font-size:1.3rem;margin-bottom:16px}.service:nth-child(3n) .icon{background:#f7e9ee;color:var(--r)}.service h3{font-size:1rem;color:var(--p2);margin-bottom:7px}.service p{font-size:.86rem;color:var(--m)}.service a{display:inline-block;margin-top:12px;color:var(--r);font-size:.8rem;font-weight:850}
+.table-wrap{border:1px solid var(--b);border-radius:20px;overflow:auto;background:#fff;box-shadow:0 8px 25px rgba(5,44,57,.07)}table{border-collapse:collapse;width:100%;min-width:980px}th{padding:16px;text-align:left;background:var(--p);color:#fff;font-size:.86rem}th:first-child{background:var(--r)}td{padding:16px;vertical-align:top;border-top:1px solid #e5ecef;font-size:.84rem}td:first-child{font-weight:850;color:var(--p);background:#f7fafb}.cell-list{padding-left:18px;color:var(--m)}.cell-list li{margin-bottom:5px}.mobile-industries{display:none}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{min-height:320px;position:relative;overflow:hidden;border-radius:20px;color:#fff;background:var(--p)}.project-bg{position:absolute;inset:0;background:center/cover;transition:.4s}.project:hover .project-bg{transform:scale(1.05)}.project:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(5,44,57,.95),rgba(5,44,57,.08) 70%)}.project-content{position:absolute;z-index:2;bottom:0;padding:22px}.tag{display:inline-block;padding:4px 9px;border-radius:999px;background:var(--r);font-size:.68rem;font-weight:850;text-transform:uppercase}.project h3{margin:9px 0 2px;font-size:1.15rem}.project p{font-size:.8rem;color:rgba(255,255,255,.72)}
+.diff{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.diff article{background:#fff;border:1px solid var(--b);border-radius:18px;padding:24px}.diff strong{color:var(--r);font-size:.78rem}.diff h3{color:var(--p);margin:9px 0 6px}.diff p{font-size:.86rem;color:var(--m)}
+.cta{background:linear-gradient(125deg,var(--p2),var(--p));color:#fff;border-radius:28px;padding:52px;position:relative;overflow:hidden}.cta:after{content:"";position:absolute;right:-120px;top:-150px;width:390px;height:390px;border-radius:50%;background:radial-gradient(circle,rgba(163,13,60,.55),transparent 65%)}.cta-content{position:relative;z-index:1;max-width:760px}.cta h2{font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:-.04em;margin:10px 0 14px}.cta p{color:rgba(255,255,255,.75)}
+.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px}.panel{background:var(--p);color:#fff;border-radius:22px;padding:30px}.panel h3{font-size:1.5rem;margin-bottom:8px}.panel>p{color:rgba(255,255,255,.72);margin-bottom:22px}.item{display:flex;gap:12px;padding:13px 0;border-top:1px solid rgba(255,255,255,.12)}.item:first-of-type{border-top:0}.ci{width:38px;height:38px;border-radius:11px;background:rgba(255,255,255,.1);display:grid;place-items:center}.item b{display:block;font-size:.88rem}.item span{font-size:.8rem;color:rgba(255,255,255,.65)}.form{background:#fff;border:1px solid var(--b);border-radius:22px;padding:30px;box-shadow:0 8px 25px rgba(5,44,57,.07)}.form h3{color:var(--p);font-size:1.45rem;margin-bottom:18px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:5px}.full{grid-column:1/-1}.field label{font-size:.8rem;font-weight:800;color:#36505b}.field input,.field select,.field textarea{width:100%;border:1px solid #d5e0e4;border-radius:11px;padding:12px 13px;outline:0;color:var(--t);background:#fff}.field textarea{min-height:120px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--p);box-shadow:0 0 0 3px rgba(7,59,76,.08)}
+footer{background:#041f29;color:#fff;padding:34px 0 20px}.footer{display:flex;justify-content:space-between;gap:25px}.footer b{font-size:1.08rem}.footer p{font-size:.78rem;color:rgba(255,255,255,.52);max-width:390px;margin-top:6px}.footer-links{display:flex;gap:17px;flex-wrap:wrap;font-size:.8rem;color:rgba(255,255,255,.65)}.copy{border-top:1px solid rgba(255,255,255,.1);margin-top:24px;padding-top:15px;text-align:center;color:rgba(255,255,255,.4);font-size:.72rem}.wa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;font-size:1.5rem;z-index:90;box-shadow:0 12px 30px rgba(0,0,0,.2);transition:.2s}.wa:hover{transform:scale(1.06)}
+@media(max-width:1050px){.links{display:none}.nav>.btn{display:none}.menu{display:block}.hero-grid{grid-template-columns:1fr;min-height:auto}.visual{max-width:650px;width:100%;margin:auto}.services{grid-template-columns:repeat(2,1fr)}.about,.contact{grid-template-columns:1fr}.about-img{max-width:600px;width:100%;margin:auto}.diff{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.brand-logo{width:125px;max-height:52px}.container{width:calc(100% - 28px)}.section{padding:65px 0}.hero-grid{padding:55px 0}.hero h1{font-size:clamp(2.5rem,13vw,4rem)}.hero-text{font-size:1rem}.trust{flex-direction:column;gap:8px}.visual{min-height:325px}.photo{inset:14px 0 14px 10px}.float-card{right:-3px;width:180px}.stats-grid{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid #e7eef0}.about-img{min-height:350px}.about-img:before{inset:0 30px 0 0}.highlights,.services,.projects,.diff{grid-template-columns:1fr}.table-wrap{display:none}.mobile-industries{display:grid;gap:13px}.industry{background:#fff;border:1px solid var(--b);border-radius:18px;padding:19px}.industry-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.industry h3{color:var(--p);font-size:1.15rem}.industry h4{font-size:.76rem;color:var(--r);text-transform:uppercase;margin:12px 0 4px}.industry ul{padding-left:18px;color:var(--m);font-size:.84rem}.cta{padding:35px 24px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.footer{flex-direction:column}}
 
-      --radius:18px;
-      --shadow: 0 18px 50px rgba(0,0,0,.18);
-      --shadow-soft: 0 10px 28px rgba(0,0,0,.12);
-      --container: 1120px;
-    }
+.services-premium{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.service-premium{position:relative;min-height:245px;padding:24px;border:1px solid var(--b);border-radius:20px;background:#fff;overflow:hidden;transition:.25s;box-shadow:0 8px 25px rgba(5,44,57,.06)}
+.service-premium:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,var(--p),var(--r))}
+.service-premium:after{content:"";position:absolute;right:-55px;bottom:-70px;width:150px;height:150px;border-radius:50%;background:rgba(7,59,76,.045)}
+.service-premium:hover{transform:translateY(-6px);box-shadow:0 18px 45px rgba(5,44,57,.13);border-color:#cbdde2}
+.service-number{font-size:.72rem;font-weight:900;letter-spacing:.12em;color:var(--r)}
+.service-icon{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;margin:14px 0 17px;background:linear-gradient(145deg,#edf5f7,#dfecef);color:var(--p);font-size:1.35rem;font-weight:900}
+.service-premium:nth-child(2n) .service-icon{background:#f8e9ee;color:var(--r)}
+.service-premium h3{position:relative;z-index:1;font-size:1.05rem;line-height:1.2;color:var(--p2);margin-bottom:8px}
+.service-premium p{position:relative;z-index:1;color:var(--m);font-size:.84rem;line-height:1.55}
+.service-list{position:relative;z-index:1;margin:12px 0 0;padding-left:17px;color:var(--m);font-size:.78rem}
+.service-list li{margin:3px 0}
+.service-link{position:relative;z-index:1;display:inline-block;margin-top:13px;color:var(--r);font-size:.77rem;font-weight:900}
+.service-band{margin-top:22px;padding:18px 20px;border-radius:18px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.service-band b{font-size:1rem}.service-band span{font-size:.82rem;color:rgba(255,255,255,.7)}
+.service-band a{flex:none}
+@media(max-width:1050px){.services-premium{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.services-premium{grid-template-columns:1fr}.service-premium{min-height:auto}.service-band{align-items:flex-start;flex-direction:column}}
 
-    *{box-sizing:border-box;}
-    html{scroll-behavior:smooth;}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", "Noto Sans", "Liberation Sans", sans-serif;
-      color:var(--texto);
-      background:
-        radial-gradient(1000px 700px at 20% -10%, rgba(163,0,58,.20), transparent 55%),
-        radial-gradient(900px 600px at 80% 10%, rgba(11,58,74,.25), transparent 55%),
-        linear-gradient(180deg, #F7FAFB, #FFFFFF);
-    }
-
-    a{color:inherit; text-decoration:none;}
-    img{max-width:100%; display:block;}
-
-    /* Util */
-    .container{max-width:var(--container); margin:0 auto; padding:0 18px;}
-    .btn{
-      display:inline-flex; align-items:center; gap:.55rem;
-      padding:.9rem 1.1rem;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.22);
-      box-shadow: var(--shadow-soft);
-      font-weight:700;
-      letter-spacing:.2px;
-      cursor:pointer;
-      transition:.2s ease;
-      user-select:none;
-      white-space:nowrap;
-    }
-    .btn:active{transform:translateY(1px);}
-    .btn-primary{
-      background:linear-gradient(135deg, var(--rubi), var(--rubi-2));
-      color:var(--branco);
-    }
-    .btn-primary:hover{filter:brightness(1.06);}
-    .btn-ghost{
-      background:rgba(255,255,255,.10);
-      color:var(--branco);
-      border-color: rgba(255,255,255,.28);
-      box-shadow:none;
-    }
-    .btn-ghost:hover{background:rgba(255,255,255,.16);}
-
-    .pill{
-      display:inline-flex; align-items:center; gap:.5rem;
-      padding:.4rem .7rem;
-      border-radius:999px;
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.16);
-      color: rgba(255,255,255,.92);
-      font-weight:600;
-      font-size:.9rem;
-    }
-
-    .section{padding:72px 0;}
-    .section-title{
-      font-size: clamp(1.4rem, 1.2rem + 1.2vw, 2.1rem);
-      margin:0 0 10px;
-      letter-spacing:-.4px;
-    }
-    .section-sub{
-      margin:0;
-      color:var(--muted);
-      max-width:72ch;
-      line-height:1.65;
-    }
-
-    /* Header */
-    .header{
-      position:sticky; top:0; z-index:50;
-      backdrop-filter: blur(10px);
-      background: rgba(255,255,255,.72);
-      border-bottom:1px solid rgba(0,0,0,.06);
-    }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0;
-      gap:12px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      font-weight:900;
-      letter-spacing:.6px;
-    }
-    .logo{
-      width:38px; height:38px;
-      border-radius:12px;
-      background: linear-gradient(135deg, var(--petroleo), var(--petroleo-2));
-      box-shadow: 0 10px 20px rgba(11,58,74,.25);
-      position:relative;
-      overflow:hidden;
-    }
-    .logo:before{
-      content:"";
-      position:absolute; inset:-18px -10px auto auto;
-      width:44px; height:44px;
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.65), transparent 60%);
-      transform: rotate(10deg);
-      opacity:.85;
-    }
-    .brand span{color:var(--petroleo);}
-
-    .nav-links{
-      display:flex; gap:18px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-    .nav-links a{
-      color:#18323B;
-      font-weight:700;
-      opacity:.9;
-      padding:.55rem .65rem;
-      border-radius:12px;
-      transition:.2s ease;
-    }
-    .nav-links a:hover{background:rgba(11,58,74,.08); opacity:1;}
-
-    .nav-cta{display:flex; gap:10px; align-items:center;}
-
-    /* Hero */
-    .hero{
-      padding:72px 0 40px;
-    }
-    .hero-wrap{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:28px;
-      align-items:stretch;
-    }
-    .hero-card{
-      border-radius: calc(var(--radius) + 6px);
-      background: linear-gradient(160deg, var(--petroleo), var(--petroleo-2));
-      color:var(--branco);
-      box-shadow: var(--shadow);
-      padding: 28px;
-      position:relative;
-      overflow:hidden;
-    }
-    .hero-card:after{
-      content:"";
-      position:absolute; inset:-80px -120px auto auto;
-      width:260px; height:260px;
-      background: radial-gradient(circle at 30% 30%, rgba(163,0,58,.55), transparent 62%);
-      transform: rotate(18deg);
-    }
-    .hero-card:before{
-      content:"";
-      position:absolute; inset:auto -140px -140px auto;
-      width:320px; height:320px;
-      background: radial-gradient(circle at 35% 35%, rgba(255,255,255,.14), transparent 62%);
-    }
-
-    .hero-top{
-      display:flex; gap:10px; flex-wrap:wrap;
-      align-items:center;
-      margin-bottom:18px;
-      position:relative;
-      z-index:1;
-    }
-    .hero h1{
-      margin:0 0 12px;
-      font-size: clamp(1.7rem, 1.1rem + 2.3vw, 3rem);
-      line-height:1.1;
-      letter-spacing:-.8px;
-      position:relative;
-      z-index:1;
-    }
-    .hero p{
-      margin:0;
-      color: rgba(255,255,255,.88);
-      line-height:1.7;
-      max-width: 62ch;
-      position:relative;
-      z-index:1;
-    }
-    .hero-actions{
-      display:flex; gap:12px; flex-wrap:wrap;
-      margin-top:18px;
-      position:relative;
-      z-index:1;
-    }
-    .hero-meta{
-      margin-top:18px;
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap:10px;
-      position:relative;
-      z-index:1;
-    }
-    .mini{
-      border-radius:16px;
-      padding:14px 14px;
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.16);
-    }
-    .mini b{display:block; font-size:1.1rem;}
-    .mini small{color: rgba(255,255,255,.78);}
-
-    .hero-side{
-      border-radius: calc(var(--radius) + 6px);
-      background: rgba(255,255,255,.82);
-      border:1px solid rgba(0,0,0,.06);
-      box-shadow: var(--shadow-soft);
-      padding: 18px;
-      overflow:hidden;
-      position:relative;
-    }
-    .hero-side:before{
-      content:"";
-      position:absolute; inset:-90px auto auto -90px;
-      width:220px; height:220px;
-      background: radial-gradient(circle at 30% 30%, rgba(11,58,74,.18), transparent 60%);
-    }
-
-    .card{
-      background: var(--branco);
-      border:1px solid rgba(0,0,0,.06);
-      border-radius: var(--radius);
-      padding: 16px;
-      position:relative;
-      z-index:1;
-    }
-    .card h3{margin:0 0 10px; font-size:1.05rem;}
-    .card p{margin:0; color:var(--muted); line-height:1.65;}
-
-    .grid{
-      display:grid;
-      gap:14px;
-    }
-    .grid-2{grid-template-columns: repeat(2, minmax(0,1fr));}
-
-    /* Blocos de serviços */
-    .cards{
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap:14px;
-      margin-top:18px;
-    }
-    .service-card{
-      border-radius: var(--radius);
-      background: rgba(255,255,255,.90);
-      border:1px solid rgba(0,0,0,.06);
-      box-shadow: var(--shadow-soft);
-      padding:16px;
-      transition:.2s ease;
-    }
-    .service-card:hover{transform:translateY(-2px);}
-
-    .icon{
-      width:42px; height:42px;
-      border-radius:14px;
-      background: linear-gradient(135deg, rgba(11,58,74,.12), rgba(163,0,58,.12));
-      border:1px solid rgba(0,0,0,.06);
-      display:grid; place-items:center;
-      margin-bottom:10px;
-    }
-    .icon svg{width:22px; height:22px;}
-
-    .list{
-      margin:12px 0 0;
-      padding:0;
-      list-style:none;
-      display:grid;
-      gap:8px;
-    }
-    .list li{
-      display:flex; gap:10px; align-items:flex-start;
-      color:#1B2D35;
-      line-height:1.55;
-    }
-    .check{
-      flex:0 0 auto;
-      width:18px; height:18px;
-      border-radius:6px;
-      background: linear-gradient(135deg, var(--petroleo), var(--rubi));
-      margin-top:3px;
-      position:relative;
-    }
-    .check:after{
-      content:"";
-      position:absolute; inset:0;
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.7), transparent 60%);
-      border-radius:6px;
-      opacity:.7;
-    }
-
-    /* Tabela de serviços (Residencial/Comercial/Industrial) */
-    .table-wrap{
-      margin-top:18px;
-      border-radius: calc(var(--radius) + 6px);
-      background: rgba(255,255,255,.92);
-      border:1px solid rgba(0,0,0,.06);
-      box-shadow: var(--shadow-soft);
-      overflow:hidden;
-    }
-    .table-head{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      padding:14px 16px;
-      background: linear-gradient(135deg, rgba(11,58,74,.10), rgba(163,0,58,.08));
-      border-bottom:1px solid rgba(0,0,0,.06);
-    }
-    .table-head b{color:#18323B; letter-spacing:-.2px;}
-    .table-note{color:var(--muted); font-size:.92rem;}
-
-    .table-scroll{overflow:auto;}
-    table{
-      width:100%;
-      border-collapse:separate;
-      border-spacing:0;
-      min-width: 860px;
-    }
-    thead th{
-      text-align:left;
-      padding:14px 16px;
-      color: var(--branco);
-      background: linear-gradient(135deg, var(--petroleo), var(--petroleo-2));
-      font-size:.95rem;
-      position:sticky;
-      top:0;
-      z-index:2;
-    }
-    thead th:first-child{background:linear-gradient(135deg, var(--rubi), var(--rubi-2));}
-    tbody td{
-      vertical-align:top;
-      padding:14px 16px;
-      border-top:1px solid rgba(0,0,0,.06);
-      background: rgba(255,255,255,.98);
-      line-height:1.55;
-    }
-    tbody tr:nth-child(even) td{background: rgba(247,250,251,.98);}
-    tbody td:first-child{font-weight:900; color:#18323B; width:22%;}
-
-    .cell-list{margin:0; padding-left:18px;}
-    .cell-list li{margin:0 0 6px; color:#1B2D35;}
-    .cell-list li:last-child{margin-bottom:0;}
-
-    /* Trabalhos */
-    .works{
-      margin-top:18px;
-      display:grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      gap:12px;
-    }
-    .work-item{
-      border-radius: var(--radius);
-      background: rgba(255,255,255,.92);
-      border: 1px solid rgba(0,0,0,.06);
-      padding:14px;
-      display:flex;
-      gap:12px;
-      align-items:flex-start;
-    }
-    .badge{
-      flex:0 0 auto;
-      padding:.35rem .6rem;
-      border-radius:999px;
-      font-weight:800;
-      font-size:.78rem;
-      color: var(--branco);
-      background: linear-gradient(135deg, var(--petroleo), var(--petroleo-2));
-    }
-    .work-item p{margin:0; color:var(--muted); line-height:1.55;}
-    .work-item b{display:block; margin-bottom:4px;}
-
-    /* Contato */
-    .contact{
-      border-radius: calc(var(--radius) + 6px);
-      background: linear-gradient(160deg, var(--petroleo), var(--petroleo-2));
-      color: var(--branco);
-      box-shadow: var(--shadow);
-      padding: 26px;
-      position:relative;
-      overflow:hidden;
-    }
-    .contact:before{
-      content:"";
-      position:absolute; inset:-120px -120px auto auto;
-      width:300px; height:300px;
-      background: radial-gradient(circle at 30% 30%, rgba(163,0,58,.55), transparent 60%);
-      transform: rotate(10deg);
-    }
-    .contact .cols{
-      display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap:16px;
-      position:relative;
-      z-index:1;
-    }
-    .contact h2{margin:0 0 10px; font-size:1.8rem; letter-spacing:-.5px;}
-    .contact p{margin:0; color: rgba(255,255,255,.88); line-height:1.7;}
-
-    .contact-card{
-      background: rgba(255,255,255,.10);
-      border:1px solid rgba(255,255,255,.16);
-      border-radius: var(--radius);
-      padding: 16px;
-    }
-    .contact-card a{font-weight:800;}
-    .contact-row{display:flex; gap:10px; align-items:flex-start; margin-top:10px;}
-    .contact-row small{color: rgba(255,255,255,.80); display:block; margin-top:2px;}
-
-    /* Footer */
-    footer{
-      padding:26px 0 40px;
-      color: var(--muted);
-      text-align:center;
-      font-size:.95rem;
-    }
-
-    /* Mobile */
-    @media (max-width: 980px){
-      .hero-wrap{grid-template-columns: 1fr;}
-      .cards{grid-template-columns: 1fr;}
-      .works{grid-template-columns: 1fr;}
-      .grid-2{grid-template-columns: 1fr;}
-      .contact .cols{grid-template-columns: 1fr;}
-      .nav-links{display:none;}
-    }
-  </style>
+</style>
 </head>
 <body>
-  <!-- Header / Navegação -->
-  <header class="header">
-    <div class="container">
-      <nav class="nav" aria-label="Navegação principal">
-        <a class="brand" href="#topo" aria-label="Ir para o topo">
-          <div class="logo" aria-hidden="true"></div>
-          <div>NOV <span>Engenharia</span></div>
-        </a>
 
-        <div class="nav-links" role="navigation" aria-label="Seções">
-          <a href="#sobre">Sobre</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#trabalhos">Trabalhos</a>
-          <a href="#contato">Contato</a>
-        </div>
-
-        <div class="nav-cta">
-          <a class="btn btn-primary" href="#contato" aria-label="Ir para contato">
-            <span>Solicitar orçamento</span>
-            <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </nav>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#inicio"><img class="brand-logo" src="logo-nov-engenharia.png" alt="NOV Engenharia"></a>
+    <nav class="links">
+      <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#atuacao">Atuação</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a>
+    </nav>
+    <a class="btn primary" href="https://wa.me/5582988192685" target="_blank" rel="noopener">Solicitar orçamento</a>
+    <button class="menu" id="menu" aria-label="Abrir menu">☰</button>
+  </div>
+  <div id="mobileMenu" style="display:none;background:#fff;border-top:1px solid #e5ecef">
+    <div class="container" style="display:grid;padding:9px 0 14px">
+      <a href="#sobre" style="padding:9px;font-weight:700">Sobre</a><a href="#servicos" style="padding:9px;font-weight:700">Serviços</a><a href="#atuacao" style="padding:9px;font-weight:700">Atuação</a><a href="#projetos" style="padding:9px;font-weight:700">Projetos</a><a href="#contato" style="padding:9px;font-weight:700">Contato</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- Hero -->
-  <main id="topo" class="hero">
-    <div class="container">
-      <div class="hero-wrap">
-        <section class="hero-card" aria-label="Apresentação">
-          <div class="hero-top">
-            <span class="pill">⚡ Engenharia elétrica</span>
-            <span class="pill">🛡️ Segurança e normas</span>
-            <span class="pill">📍 Maceió/AL</span>
-          </div>
+<main>
+<section id="inicio" class="hero">
+<div class="container hero-grid">
+<div>
+  <div class="eyebrow">Engenharia elétrica e soluções integradas</div>
+  <h1>Soluções completas em <em>Engenharia</em>.</h1>
+  <p class="hero-text">Projetos, instalações, laudos e manutenção para residências, comércios e indústrias, com foco em segurança, eficiência, desempenho e qualidade técnica.</p>
+  <div class="actions"><a class="btn primary" href="https://wa.me/5582988192685" target="_blank" rel="noopener">Solicitar orçamento →</a><a class="btn secondary" href="#servicos">Conhecer serviços ↓</a></div>
+  <div class="trust"><span>✓ <b>Fundada em 2022</b></span><span>✓ <b>Residencial • Comercial • Industrial</b></span><span>✓ <b>Projetos 2D e BIM</b></span></div>
+</div>
+<div class="visual">
+  <div class="badge"><b>2022</b><span>Fundação da NOV</span></div>
+  <div class="photo"><div class="photo-caption"><small>PROJETOS • LAUDOS • INSTALAÇÕES</small><h3>Engenharia com segurança e resultado.</h3></div></div>
+  <div class="float-card"><b>Qualidade técnica</b><span>Soluções sob medida para cada projeto.</span></div>
+</div>
+</div>
+</section>
 
-          <h1>Soluções completas em engenharia para transformar energia em resultados.</h1>
-          <p>
-            Projetos, instalações, manutenções e laudos com alto padrão de qualidade e segurança.
-            Atendemos residências, comércios e indústrias com foco em eficiência energética, confiabilidade e atendimento personalizado.
-          </p>
+<section class="stats"><div class="container stats-grid"><div class="stat"><b>2022</b><span>Fundação</span></div><div class="stat"><b>2D + BIM</b><span>Modelagem e projetos</span></div><div class="stat"><b>BT + MT</b><span>Baixa e média tensão</span></div><div class="stat"><b>3 segmentos</b><span>Residencial, comercial e industrial</span></div></div></section>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/5582988192685" target="_blank" rel="noopener">Falar no WhatsApp</a>
-            <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
-          </div>
+<section id="sobre" class="section">
+<div class="container about">
+<div class="about-img"><div class="about-card"><b>NOV</b><span>Engenharia • Segurança • Resultado</span></div></div>
+<div>
+  <div class="eyebrow">Sobre nós</div><h2>Engenharia que transforma energia em resultados.</h2>
+  <p>Fundada em 2022, a NOV Engenharia é uma empresa especializada em soluções completas em engenharia elétrica, oferecendo projetos, instalações e manutenções com alto padrão de qualidade e segurança.</p>
+  <p>Atendemos residências, comércios e indústrias, sempre com foco em eficiência energética, confiabilidade e atendimento personalizado. Nosso compromisso é transformar energia em resultados, com tecnologia, inovação e profissionais qualificados para cada tipo de projeto.</p>
+  <p>Trabalhamos com foco em segurança, desempenho e economia, garantindo soluções sob medida que atendem às normas técnicas e às necessidades específicas de cada cliente.</p>
+  <div class="highlights"><div class="highlight"><b>Segurança</b><span>Conformidade e confiabilidade técnica.</span></div><div class="highlight"><b>Eficiência</b><span>Desempenho e economia.</span></div><div class="highlight"><b>Tecnologia</b><span>CAD, BIM e soluções integradas.</span></div><div class="highlight"><b>Personalização</b><span>Soluções conforme cada necessidade.</span></div></div>
+</div>
+</div>
+</section>
 
-          <div class="hero-meta" aria-label="Destaques">
-          </div>
-        </section>
+<section id="servicos" class="section alt">
+<div class="container">
+  <div class="head">
+    <div class="eyebrow">Nossas soluções</div>
+    <h2>Engenharia completa para cada etapa do seu empreendimento.</h2>
+    <p>Da concepção do projeto à execução, inspeção e manutenção, a NOV Engenharia reúne soluções técnicas para diferentes necessidades.</p>
+  </div>
 
-        <aside class="hero-side" aria-label="Resumo">
-          <div class="grid grid-2">
-            <div class="card">
-              <h3>Atuação</h3>
-              <p>Residências, comércios e indústrias com soluções sob medida e foco em desempenho, economia e segurança.</p>
-            </div>
-            <div class="card">
-              <h3>Compromisso</h3>
-              <p>Tecnologia, inovação e profissionais qualificados para cada tipo de projeto e necessidade do cliente.</p>
-            </div>
-          </div>
+  <div class="services-premium">
+    <article class="service-premium">
+      <span class="service-number">01 / PROJETOS</span>
+      <div class="service-icon">⚡</div>
+      <h3>Projetos Elétricos</h3>
+      <p>Soluções elétricas dimensionadas para segurança, desempenho e eficiência.</p>
+      <ul class="service-list"><li>Baixa e média tensão</li><li>Subestações</li><li>Painéis e diagramas</li></ul>
+      <a class="service-link" href="#contato">Solicitar projeto →</a>
+    </article>
 
-          <div class="card" style="margin-top:14px;">
-            <h3>Principais frentes</h3>
-            <ul class="list" aria-label="Principais frentes de serviço">
-              <li><span class="check" aria-hidden="true"></span><span>Projetos técnicos (BT/MT, SPDA, subestações, fotovoltaico)</span></li>
-              <li><span class="check" aria-hidden="true"></span><span>Laudos, perícias e conformidade (NR10, NBR 5410)</span></li>
-              <li><span class="check" aria-hidden="true"></span><span>Execução, manutenção e orçamentos de obra</span></li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </main>
+    <article class="service-premium">
+      <span class="service-number">02 / PROTEÇÃO</span>
+      <div class="service-icon">⚡</div>
+      <h3>SPDA & Aterramento</h3>
+      <p>Proteção contra descargas atmosféricas e soluções de aterramento.</p>
+      <ul class="service-list"><li>Projetos de SPDA</li><li>Inspeções e laudos</li><li>Gerenciamento de risco</li></ul>
+      <a class="service-link" href="#contato">Solicitar avaliação →</a>
+    </article>
 
-  <!-- Sobre -->
-  <section id="sobre" class="section">
-    <div class="container">
-      <h2 class="section-title">Sobre nós</h2>
-      <p class="section-sub">
-        Fundada em 2022, a NOV Engenharia é uma empresa especializada em soluções completas em engenharia elétrica,
-        oferecendo projetos, instalações e manutenções com alto padrão de qualidade e segurança.
-      </p>
+    <article class="service-premium">
+      <span class="service-number">03 / ENERGIA</span>
+      <div class="service-icon">☀</div>
+      <h3>Energia Fotovoltaica</h3>
+      <p>Estudos e sistemas solares para reduzir custos e aumentar eficiência.</p>
+      <ul class="service-list"><li>Estudo de viabilidade</li><li>Projetos fotovoltaicos</li><li>Monitoramento e manutenção</li></ul>
+      <a class="service-link" href="#contato">Falar sobre solar →</a>
+    </article>
 
-      <div class="cards" style="margin-top:18px;">
-        <article class="service-card">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3 7h7l-5.5 4.2L18 21l-6-4-6 4 1.5-7.8L2 9h7l3-7z" stroke="currentColor" stroke-width="1.8"/></svg>
-          </div>
-          <h3 style="margin:0 0 6px;">Qualidade e segurança</h3>
-          <p>Processos e entregas alinhados às normas técnicas e às necessidades específicas de cada cliente.</p>
-        </article>
+    <article class="service-premium">
+      <span class="service-number">04 / SEGURANÇA</span>
+      <div class="service-icon">🔥</div>
+      <h3>Incêndio & AVCB</h3>
+      <p>Projetos e acompanhamento para prevenção e proteção contra incêndios.</p>
+      <ul class="service-list"><li>Prevenção e proteção</li><li>GLP</li><li>Acompanhamento de AVCB</li></ul>
+      <a class="service-link" href="#contato">Solicitar serviço →</a>
+    </article>
 
-        <article class="service-card">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12a8 8 0 1116 0 8 8 0 01-16 0z" stroke="currentColor" stroke-width="1.8"/><path d="M8 12h8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v8" stroke="currentColor" stroke-width="1.8"/></svg>
-          </div>
-          <h3 style="margin:0 0 6px;">Eficiência energética</h3>
-          <p>Foco em desempenho e economia, garantindo soluções sob medida e confiáveis para cada aplicação.</p>
-        </article>
+    <article class="service-premium">
+      <span class="service-number">05 / INSPEÇÃO</span>
+      <div class="service-icon">✓</div>
+      <h3>Laudos & Vistorias</h3>
+      <p>Avaliação técnica das instalações e emissão de documentação.</p>
+      <ul class="service-list"><li>NR-10 e NBR 5410</li><li>Laudos de SPDA</li><li>Conformidade elétrica</li></ul>
+      <a class="service-link" href="#contato">Solicitar laudo →</a>
+    </article>
 
-        <article class="service-card">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v18" stroke="currentColor" stroke-width="1.8"/><path d="M7 7l5-4 5 4" stroke="currentColor" stroke-width="1.8"/><path d="M7 17l5 4 5-4" stroke="currentColor" stroke-width="1.8"/></svg>
-          </div>
-          <h3 style="margin:0 0 6px;">Atendimento personalizado</h3>
-          <p>Planejamento, execução e acompanhamento com comunicação clara e soluções que geram resultados.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+    <article class="service-premium">
+      <span class="service-number">06 / EXECUÇÃO</span>
+      <div class="service-icon">⌁</div>
+      <h3>Instalações & Manutenção</h3>
+      <p>Execução, manutenção preventiva e corretiva de instalações.</p>
+      <ul class="service-list"><li>Instalações elétricas</li><li>Painéis e equipamentos</li><li>Manutenção preventiva</li></ul>
+      <a class="service-link" href="#contato">Solicitar atendimento →</a>
+    </article>
 
-  <!-- Serviços -->
-  <section id="servicos" class="section" style="padding-top:30px;">
-    <div class="container">
-      <h2 class="section-title">Serviços</h2>
-      <p class="section-sub">Conheça nossas áreas de atuação em projetos e engenharia, com entregas técnicas completas.</p>
+    <article class="service-premium">
+      <span class="service-number">07 / TECNOLOGIA</span>
+      <div class="service-icon">◈</div>
+      <h3>2D & BIM</h3>
+      <p>Projetos digitais e compatibilização para melhorar a execução.</p>
+      <ul class="service-list"><li>Projetos 2D</li><li>Modelagem BIM</li><li>Compatibilização</li></ul>
+      <a class="service-link" href="#contato">Conhecer solução →</a>
+    </article>
 
-      <div class="cards" style="margin-top:18px;">
-        <article class="service-card" aria-label="Serviços de projetos">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 2h9l3 3v17H6V2z" stroke="currentColor" stroke-width="1.8"/><path d="M9 10h6" stroke="currentColor" stroke-width="1.8"/><path d="M9 14h6" stroke="currentColor" stroke-width="1.8"/><path d="M9 18h6" stroke="currentColor" stroke-width="1.8"/></svg>
-          </div>
-          <h3 style="margin:0 0 8px;">Gama de Projetos da NOV</h3>
-          <ul class="list">
-            <li><span class="check" aria-hidden="true"></span><span>Instalações Elétricas de Baixa e Média Tensão</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Projetos de Subestações Industriais e Comerciais</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Sistemas Fotovoltaicos</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Sistema de Proteção contra Descargas Atmosféricas (SPDA)</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Dados e Voz (Cabeamento Estruturado)</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Antena de TV e Sonorização</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>CFTV e Segurança Eletrônica</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Prevenção e Proteção Contra Incêndios e GLP</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Hidrossanitário e Drenagem</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Climatização e Exaustão</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Arquitetônico e Estrutural</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Projetos em 2D e BIM</span></li>
-          </ul>
-        </article>
+    <article class="service-premium">
+      <span class="service-number">08 / INFRAESTRUTURA</span>
+      <div class="service-icon">⌂</div>
+      <h3>Projetos Complementares</h3>
+      <p>Integração de disciplinas para projetos mais completos.</p>
+      <ul class="service-list"><li>Dados e voz</li><li>CFTV e segurança</li><li>Hidrossanitário, climatização e exaustão</li></ul>
+      <a class="service-link" href="#contato">Solicitar orçamento →</a>
+    </article>
+  </div>
 
-        <article class="service-card" aria-label="Serviços de engenharia">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l8 6v7c0 5-4 7-8 7s-8-2-8-7V8l8-6z" stroke="currentColor" stroke-width="1.8"/><path d="M8 12l2.2 2.2L16 8.4" stroke="currentColor" stroke-width="1.8"/></svg>
-          </div>
-          <h3 style="margin:0 0 8px;">Serviços de Engenharia</h3>
-          <ul class="list">
-            <li><span class="check" aria-hidden="true"></span><span>Elaboração do Prontuário das Instalações Elétricas e Construção Civil</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Avaliação das Instalações Elétricas conforme NR10 e ABNT NBR 5410</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Levantamento de cargas e elaboração de diagramas unifilares</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Laudos de SPDA e Aterramento</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Laudos de Ergonomia e Segurança do Trabalho</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Acompanhamento para AVCB junto ao Corpo de Bombeiros</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Perícias em edificações e avaliação de imóveis</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Execução e manutenção de instalações elétricas e de segurança</span></li>
-            <li><span class="check" aria-hidden="true"></span><span>Elaboração de orçamentos de obra</span></li>
-          </ul>
-        </article>
+  <div class="service-band">
+    <div><b>Precisa de uma solução personalizada?</b><br><span>Também atuamos com consultoria, perícias, orçamentos e documentação técnica.</span></div>
+    <a class="btn primary" href="https://wa.me/5582988192685" target="_blank" rel="noopener">Falar com a NOV →</a>
+  </div>
+</div>
+</section>
 
-        <article class="service-card" aria-label="Chamada para orçamento">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7h16" stroke="currentColor" stroke-width="1.8"/><path d="M4 12h16" stroke="currentColor" stroke-width="1.8"/><path d="M4 17h10" stroke="currentColor" stroke-width="1.8"/><path d="M17 17l3 3" stroke="currentColor" stroke-width="1.8"/><path d="M20 17l-3 3" stroke="currentColor" stroke-width="1.8"/></svg>
-          </div>
-          <h3 style="margin:0 0 8px;">Precisa de orçamento?</h3>
-          <p style="margin:0; color:var(--muted); line-height:1.65;">
-            Fale com a NOV Engenharia e receba um atendimento rápido e personalizado.
-          </p>
-          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
-            <a class="btn btn-primary" href="https://wa.me/5582991318627" target="_blank" rel="noopener">WhatsApp (82) 99131-8627</a>
-            <a class="btn" style="background:rgba(11,58,74,.10); border-color:rgba(11,58,74,.18); box-shadow:none;" href="#contato">Ver contatos</a>
-          </div>
-        </article>
-      </div>
+<section id="atuacao" class="section"><div class="container"><div class="head"><div class="eyebrow">Áreas de atuação</div><h2>Uma solução para cada tipo de empreendimento.</h2><p>Exemplos dos serviços da NOV Engenharia para os segmentos residencial, comercial e industrial.</p></div>
+<div class="table-wrap"><table><thead><tr><th>Categoria</th><th>Residencial 🏠</th><th>Comercial 🏢</th><th>Industrial 🏭</th></tr></thead><tbody>
+<tr><td>Projetos Elétricos</td><td><ul class="cell-list"><li>Instalação elétrica</li><li>Iluminação decorativa</li><li>Entrada padrão e medição</li></ul></td><td><ul class="cell-list"><li>Lojas e escritórios</li><li>Iluminação técnica</li><li>Distribuição trifásica</li></ul></td><td><ul class="cell-list"><li>Baixa e média tensão</li><li>Painéis e automação</li><li>SPDA e aterramento</li></ul></td></tr>
+<tr><td>Execução e Instalações</td><td><ul class="cell-list"><li>Tomadas, luminárias e disjuntores</li><li>Quadros de distribuição</li><li>Aterramento</li></ul></td><td><ul class="cell-list"><li>Instalações e iluminação</li><li>Automação e CFTV</li><li>Nobreaks e geradores</li></ul></td><td><ul class="cell-list"><li>Painéis e cabines</li><li>Motores e comandos</li><li>Linhas de produção</li></ul></td></tr>
+<tr><td>Laudos e Vistorias</td><td><ul class="cell-list"><li>Conformidade NR-10</li><li>Verificação de aterramento</li></ul></td><td><ul class="cell-list"><li>Laudo para alvarás</li><li>Vistoria de concessionária</li></ul></td><td><ul class="cell-list"><li>Termografia industrial</li><li>SPDA e NBR 5410</li></ul></td></tr>
+<tr><td>Consultoria e Assessoria</td><td><ul class="cell-list"><li>Redução de consumo</li><li>Eficiência energética</li></ul></td><td><ul class="cell-list"><li>Planejamento elétrico</li><li>Demanda energética</li></ul></td><td><ul class="cell-list"><li>Otimização e eficiência</li><li>NR-10 e NR-12</li></ul></td></tr>
+<tr><td>Energias Renováveis</td><td><ul class="cell-list"><li>Sistemas fotovoltaicos</li><li>Estudo de viabilidade</li></ul></td><td><ul class="cell-list"><li>Sistemas solares</li><li>Integração com geradores</li></ul></td><td><ul class="cell-list"><li>Usinas solares</li><li>Monitoramento e manutenção</li></ul></td></tr>
+<tr><td>Manutenção</td><td><ul class="cell-list"><li>Disjuntores e luminárias</li><li>Revisões preventivas</li></ul></td><td><ul class="cell-list"><li>Manutenção predial</li><li>Verificação de sobrecargas</li></ul></td><td><ul class="cell-list"><li>Manutenção de painéis</li><li>Testes de isolação e carga</li></ul></td></tr>
+<tr><td>Regularização e Documentação</td><td><ul class="cell-list"><li>ART</li><li>Relatórios de vistoria</li></ul></td><td><ul class="cell-list"><li>Relatórios para concessionárias</li></ul></td><td><ul class="cell-list"><li>Bombeiros, concessionária e CREA</li></ul></td></tr>
+</tbody></table></div>
 
-      <!-- Tabela Visual – Serviços da NOV Engenharia -->
-      <div class="table-wrap" aria-label="Tabela Visual – Serviços da NOV Engenharia">
-        <div class="table-head">
-          <b>Tabela Visual – Serviços de Elétrica da NOV Engenharia</b>
-          <span class="table-note">Arraste na horizontal no celular →</span>
-        </div>
-        <div class="table-scroll" role="region" aria-label="Tabela de serviços por categoria" tabindex="0">
-          <table>
-            <thead>
-              <tr>
-                <th>Categoria</th>
-                <th>Residencial 🏠</th>
-                <th>Comercial 🏢</th>
-                <th>Industrial 🏭</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Projetos Elétricos</td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Projeto de instalação elétrica</li>
-                    <li>Projeto de iluminação decorativa</li>
-                    <li>Entrada padrão e medição</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Projeto elétrico de lojas e escritórios</li>
-                    <li>Iluminação técnica e de destaque</li>
-                    <li>Distribuição de energia trifásica</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Projeto elétrico de baixa e média tensão</li>
-                    <li>Projeto de painéis e automação</li>
-                    <li>Projeto de SPDA e aterramento</li>
-                  </ul>
-                </td>
-              </tr>
+<div class="mobile-industries">
+<article class="industry"><div class="industry-head"><h3>Residencial</h3><span>🏠</span></div><h4>Projetos</h4><ul><li>Instalação elétrica</li><li>Iluminação decorativa</li><li>Entrada padrão e medição</li></ul><h4>Execução</h4><ul><li>Tomadas, luminárias e disjuntores</li><li>Quadros e aterramento</li></ul><h4>Laudos</h4><ul><li>NR-10 e aterramento</li></ul><h4>Consultoria</h4><ul><li>Redução de consumo</li></ul><h4>Fotovoltaico</h4><ul><li>Sistemas e viabilidade</li></ul><h4>Manutenção</h4><ul><li>Revisões preventivas</li></ul><h4>Regularização</h4><ul><li>ART e relatórios</li></ul></article>
+<article class="industry"><div class="industry-head"><h3>Comercial</h3><span>🏢</span></div><h4>Projetos</h4><ul><li>Lojas e escritórios</li><li>Iluminação técnica</li><li>Distribuição trifásica</li></ul><h4>Execução</h4><ul><li>Instalações e iluminação</li><li>Automação e CFTV</li><li>Nobreaks e geradores</li></ul><h4>Laudos</h4><ul><li>Alvarás e concessionária</li></ul><h4>Consultoria</h4><ul><li>Planejamento e demanda</li></ul><h4>Fotovoltaico</h4><ul><li>Sistemas solares</li></ul><h4>Manutenção</h4><ul><li>Manutenção predial</li></ul><h4>Regularização</h4><ul><li>Relatórios técnicos</li></ul></article>
+<article class="industry"><div class="industry-head"><h3>Industrial</h3><span>🏭</span></div><h4>Projetos</h4><ul><li>BT e MT</li><li>Painéis e automação</li><li>SPDA e aterramento</li></ul><h4>Execução</h4><ul><li>Painéis e cabines</li><li>Motores e comandos</li><li>Linhas de produção</li></ul><h4>Laudos</h4><ul><li>Termografia</li><li>SPDA e NBR 5410</li></ul><h4>Consultoria</h4><ul><li>Otimização</li><li>NR-10 e NR-12</li></ul><h4>Fotovoltaico</h4><ul><li>Usinas solares</li></ul><h4>Manutenção</h4><ul><li>Painéis e testes</li></ul><h4>Regularização</h4><ul><li>Bombeiros, concessionária e CREA</li></ul></article>
+</div></div></section>
 
-              <tr>
-                <td>Execução e Instalações</td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Instalação de tomadas, luminárias e disjuntores</li>
-                    <li>Quadros de distribuição</li>
-                    <li>Sistema de aterramento</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Instalações de sistemas elétricos e de iluminação comercial</li>
-                    <li>Automação de ambientes e CFTV</li>
-                    <li>Nobreaks e geradores</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Montagem de painéis e cabines de força</li>
-                    <li>Instalação de motores e comandos elétricos</li>
-                    <li>Linhas de produção e controle</li>
-                  </ul>
-                </td>
-              </tr>
+<section id="projetos" class="section alt"><div class="container"><div class="head"><div class="eyebrow">Experiência</div><h2>Trabalhos realizados.</h2><p>Projetos, laudos e serviços desenvolvidos em parceria com empresas e instituições.</p></div>
+<div class="projects">
+<article class="project"><div class="project-bg" style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80')"></div><div class="project-content"><span class="tag">SPDA</span><h3>Fundação Bradesco</h3><p>Maceió/AL • Tecno Engenharia</p></div></article>
+<article class="project"><div class="project-bg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80')"></div><div class="project-content"><span class="tag">Infraestrutura</span><h3>Centro de Saúde Familiar</h3><p>Maceió/AL • TPC Engenharia</p></div></article>
+<article class="project"><div class="project-bg" style="background-image:url('https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=900&q=80')"></div><div class="project-content"><span class="tag">Obra</span><h3>Novo Mercado Municipal</h3><p>Maceió/AL • Future Motion Brasil</p></div></article>
+<article class="project"><div class="project-bg" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80')"></div><div class="project-content"><span class="tag">Residencial</span><h3>Residencial Sunrise Rpontes</h3><p>Porto de Pedras/AL • VL Engenharia</p></div></article>
+<article class="project"><div class="project-bg" style="background-image:url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80')"></div><div class="project-content"><span class="tag">Público</span><h3>Centro Administrativo</h3><p>Delmiro Gouveia/AL • Dowell & Jobim</p></div></article>
+<article class="project"><div class="project-bg" style="background-image:url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=80')"></div><div class="project-content"><span class="tag">Subestação</span><h3>Origem Energia</h3><p>Actemiun Sysnergy</p></div></article>
+<article class="project"><div class="project-bg" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=80')"></div><div class="project-content"><span class="tag">Eventos</span><h3>Centro de Convenções</h3><p>Barra de São Miguel/AL • VL Engenharia</p></div></article>
+<article class="project"><div class="project-bg" style="background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80')"></div><div class="project-content"><span class="tag">Incêndio</span><h3>CEASA Maceió</h3><p>Projeto de Prevenção e Incêndio</p></div></article>
+<article class="project"><div class="project-bg" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80')"></div><div class="project-content"><span class="tag">Laudos</span><h3>Indústrias, hospitais e residenciais</h3><p>Elétrica, Incêndio e SPDA</p></div></article>
+</div></div></section>
 
-              <tr>
-                <td>Laudos e Vistorias</td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Laudo de conformidade NR-10</li>
-                    <li>Verificação de aterramento</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Laudo elétrico para alvarás e vistoria de concessionária</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Termografia industrial</li>
-                    <li>Laudo de SPDA e de conformidade NBR 5410</li>
-                  </ul>
-                </td>
-              </tr>
+<section class="section"><div class="container"><div class="head"><div class="eyebrow">Por que a NOV</div><h2>Engenharia com foco em segurança, desempenho e economia.</h2></div><div class="diff">
+<article><strong>01</strong><h3>Qualidade técnica</h3><p>Entregas estruturadas para atender às normas e necessidades do empreendimento.</p></article>
+<article><strong>02</strong><h3>Experiência multidisciplinar</h3><p>Atuação em projetos elétricos, SPDA, incêndio e infraestrutura.</p></article>
+<article><strong>03</strong><h3>Tecnologia e inovação</h3><p>Projetos 2D, BIM e ferramentas digitais para precisão e compatibilização.</p></article>
+<article><strong>04</strong><h3>Atendimento personalizado</h3><p>Soluções sob medida, comunicação clara e foco no resultado.</p></article>
+</div></div></section>
 
-              <tr>
-                <td>Consultoria e Assessoria</td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Redução de consumo e eficiência energética</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Planejamento elétrico de obras</li>
-                    <li>Consultoria de demanda energética</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Estudos de otimização e eficiência</li>
-                    <li>Adequação a normas NR-10 e NR-12</li>
-                  </ul>
-                </td>
-              </tr>
+<section class="section" style="padding-top:0"><div class="container"><div class="cta"><div class="cta-content"><div class="eyebrow" style="color:#fff">Vamos conversar</div><h2>Tem um projeto? Vamos transformar sua necessidade em solução.</h2><p>Solicite um orçamento e conte para a NOV Engenharia o que você precisa.</p><div class="actions"><a class="btn primary" href="https://wa.me/5582988192685" target="_blank" rel="noopener">Falar pelo WhatsApp →</a><a class="btn secondary" href="#contato">Enviar solicitação</a></div></div></div></div></section>
 
-              <tr>
-                <td>Energias Renováveis</td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Instalação de sistemas fotovoltaicos</li>
-                    <li>Estudo de viabilidade</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Sistema solar para lojas e condomínios</li>
-                    <li>Integração com geradores</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Usinas solares industriais</li>
-                    <li>Monitoramento remoto e manutenção</li>
-                  </ul>
-                </td>
-              </tr>
+<section id="contato" class="section alt"><div class="container"><div class="head"><div class="eyebrow">Contato</div><h2>Fale com a NOV Engenharia.</h2><p>Solicite informações, orçamento ou uma avaliação inicial do seu projeto.</p></div>
+<div class="contact"><div class="panel"><h3>Vamos falar sobre seu projeto?</h3><p>Atendimento para projetos, laudos, instalações, manutenção e consultoria.</p>
+<div class="item"><div class="ci">☎</div><div><b>(82) 98819-2685</b><span>Telefone / WhatsApp</span></div></div>
+<div class="item"><div class="ci">☎</div><div><b>(82) 99131-8627</b><span>Telefone / WhatsApp</span></div></div>
+<div class="item"><div class="ci">✉</div><div><b>contato@tecnovengenharia.com</b><span>E-mail</span></div></div>
+<div class="item"><div class="ci">◎</div><div><b>@nov.enge</b><span>Instagram</span></div></div></div>
+<form class="form" id="form"><h3>Solicite um orçamento</h3><div class="form-grid">
+<div class="field"><label>Nome</label><input id="nome" required placeholder="Seu nome"></div><div class="field"><label>Telefone</label><input id="tel" required placeholder="(82) 99999-9999"></div>
+<div class="field"><label>E-mail</label><input id="email" type="email" placeholder="seu@email.com"></div><div class="field"><label>Tipo de serviço</label><select id="tipo"><option>Selecione</option><option>Projeto elétrico</option><option>SPDA / aterramento</option><option>Laudo / inspeção</option><option>Fotovoltaico</option><option>Incêndio / AVCB</option><option>Subestação</option><option>Execução / manutenção</option><option>Outro</option></select></div>
+<div class="field full"><label>Mensagem</label><textarea id="msg" placeholder="Descreva brevemente o que você precisa."></textarea></div><div class="field full"><button class="btn primary" type="submit">Enviar pelo WhatsApp →</button></div>
+</div></form></div></div></section>
+</main>
 
-              <tr>
-                <td>Manutenção</td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Troca de disjuntores e luminárias</li>
-                    <li>Revisões preventivas</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Manutenção predial elétrica</li>
-                    <li>Verificação de sobrecargas</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Manutenção preventiva e corretiva em painéis</li>
-                    <li>Testes de isolação e carga</li>
-                  </ul>
-                </td>
-              </tr>
+<footer><div class="container"><div class="footer"><div><b>NOV Engenharia</b><p>Projetos, laudos, instalações e manutenção com foco em segurança, desempenho e economia.</p></div><div class="footer-links"><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#atuacao">Atuação</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a><a href="https://instagram.com/nov.enge" target="_blank" rel="noopener">Instagram</a></div></div><div class="copy">© <span id="year"></span> NOV Engenharia. Todos os direitos reservados.</div></div></footer>
+<a class="wa" href="https://wa.me/5582988192685" target="_blank" rel="noopener" aria-label="WhatsApp">☎</a>
 
-              <tr>
-                <td>Regularização e Documentação</td>
-                <td>
-                  <ul class="cell-list">
-                    <li>ART de responsabilidade técnica</li>
-                    <li>Relatórios de vistoria</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Relatórios técnicos para concessionárias</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="cell-list">
-                    <li>Documentos e laudos para Corpo de Bombeiros, concessionária e CREA</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trabalhos -->
-  <section id="trabalhos" class="section" style="padding-top:30px;">
-    <div class="container">
-      <h2 class="section-title">Trabalhos realizados</h2>
-      <p class="section-sub">Experiência em projetos e laudos para diferentes tipos de empreendimentos, com parcerias estratégicas.</p>
-
-      <div class="works" aria-label="Lista de trabalhos realizados">
-        <div class="work-item"><span class="badge">SPDA</span><div><b>Fundação Bradesco (Maceió/AL)</b><p>Parceria com Tecno Engenharia.</p></div></div>
-        <div class="work-item"><span class="badge">Obras</span><div><b>Centro de Saúde Familiar (Maceió/AL)</b><p>Parceria com TPC Engenharia.</p></div></div>
-        <div class="work-item"><span class="badge">Mercado</span><div><b>Novo Mercado Municipal de Maceió</b><p>Parceria com Future Motion Brasil.</p></div></div>
-        <div class="work-item"><span class="badge">Residencial</span><div><b>Residencial Sunrise Rpontes (Porto de Pedras/AL)</b><p>Parceria com VL Engenharia.</p></div></div>
-        <div class="work-item"><span class="badge">Público</span><div><b>Centro Administrativo de Delmiro Gouveia/AL</b><p>Parceria com Dowell & Jobim.</p></div></div>
-        <div class="work-item"><span class="badge">SE</span><div><b>Subestação Origem Energia</b><p>Parceria com Actemiun Sysnergy.</p></div></div>
-        <div class="work-item"><span class="badge">Eventos</span><div><b>Centro de Convenções (Barra de São Miguel/AL)</b><p>Parceria com VL Engenharia.</p></div></div>
-        <div class="work-item"><span class="badge">Incêndio</span><div><b>CEASA Maceió/AL</b><p>Projeto de Prevenção e Incêndio.</p></div></div>
-        <div class="work-item"><span class="badge">Empreend.</span><div><b>TELESIL & ENGENHARC</b><p>Parceria com TPC Engenharia.</p></div></div>
-        <div class="work-item"><span class="badge">Laudos</span><div><b>Indústrias, hospitais e prédios residenciais</b><p>Laudos de Elétrica, Incêndio e SPDA — parceria com MCZ Protec e TPC Engenharia.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato" class="section" style="padding-top:30px;">
-    <div class="container">
-      <div class="contact">
-        <div class="cols">
-          <div>
-            <h2>Contato</h2>
-            <p>
-              Vamos conversar sobre o seu projeto? Solicite um orçamento e receba atendimento personalizado.
-            </p>
-            <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px;">
-              <a class="btn btn-primary" href="mailto:contato@tecnovengenharia.com">Enviar e-mail</a>
-              <a class="btn btn-ghost" href="https://instagram.com/nov.enge" target="_blank" rel="noopener">Abrir Instagram</a>
-            </div>
-          </div>
-
-          <div class="contact-card" aria-label="Informações de contato">
-            <div class="contact-row">
-              <div class="icon" style="background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.14);" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10v20H7V2z" stroke="currentColor" stroke-width="1.8"/><path d="M10 19h4" stroke="currentColor" stroke-width="1.8"/></svg>
-              </div>
-              <div>
-                <a href="tel:+5582988192685">(82) 98819-2685</a><small>Telefone / WhatsApp</small>
-              </div>
-            </div>
-            <div class="contact-row">
-              <div class="icon" style="background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.14);" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16v12H4V6z" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8"/></svg>
-              </div>
-              <div>
-                <a href="mailto:contato@tecnovengenharia.com">contato@tecnovengenharia.com</a><small>E-mail</small>
-              </div>
-            </div>
-            <div class="contact-row">
-              <div class="icon" style="background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.14);" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor" stroke-width="1.8"/><path d="M4 12a8 8 0 1116 0 8 8 0 01-16 0z" stroke="currentColor" stroke-width="1.8"/></svg>
-              </div>
-              <div>
-                <a href="https://instagram.com/nov.enge" target="_blank" rel="noopener">@nov.enge</a><small>Instagram</small>
-              </div>
-            </div>
-            <div class="contact-row">
-              <div class="icon" style="background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.14);" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l8 6v7c0 5-4 7-8 7s-8-2-8-7V8l8-6z" stroke="currentColor" stroke-width="1.8"/></svg>
-              </div>
-              <div>
-                <a href="tel:+5582991318627">(82) 99131-8627</a><small>Telefone / WhatsApp</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <footer>
-        <div class="container">
-          <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap; align-items:center;">
-            <span style="font-weight:900; color:var(--petroleo);">NOV Engenharia</span>
-            <span>•</span>
-            <span>Projetos, instalações e laudos com segurança e qualidade.</span>
-          </div>
-          <div style="margin-top:10px;">© <span id="year"></span> NOV Engenharia. Todos os direitos reservados.</div>
-        </div>
-      </footer>
-    </div>
-  </section>
-
-  <script>
-    // Ano automático no rodapé
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<script>
+const menu=document.getElementById("menu"),mm=document.getElementById("mobileMenu");
+menu.addEventListener("click",()=>{const open=mm.style.display==="block";mm.style.display=open?"none":"block";menu.textContent=open?"☰":"✕"});
+document.querySelectorAll("#mobileMenu a").forEach(a=>a.addEventListener("click",()=>{mm.style.display="none";menu.textContent="☰"}));
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("form").addEventListener("submit",e=>{e.preventDefault();const q=t=>encodeURIComponent(t);const text=`Olá, NOV Engenharia!%0A%0AGostaria de solicitar um orçamento.%0A%0ANome: ${q(document.getElementById("nome").value)}%0ATelefone: ${q(document.getElementById("tel").value)}%0AE-mail: ${q(document.getElementById("email").value||"Não informado")}%0AServiço: ${q(document.getElementById("tipo").value)}%0AMensagem: ${q(document.getElementById("msg").value||"Não informada")}`;window.open(`https://wa.me/5582988192685?text=${text}`,"_blank")});
+</script>
 </body>
 </html>
